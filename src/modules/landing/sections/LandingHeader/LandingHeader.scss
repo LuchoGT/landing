@@ -3,8 +3,12 @@
     height: 4rem;
     background-color: $navbar-color;
     .navbar{
+        margin: 0 auto;
+        width: 100%;
+        max-width: calc(1200px + 40px);
+        padding: 0 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: inherit;
         &__logo{

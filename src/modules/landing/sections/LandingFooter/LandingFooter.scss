@@ -3,7 +3,7 @@
     color: $navbar-color;
     &__container{
         max-width: calc(1240px);
-        margin: 0px auto;
+        margin: 0 auto;
         padding: 20px 20px 50px;
     }
     &__menu{
@@ -13,7 +13,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         padding-bottom: 30px;
-        justify-content: space-evenly;
+        justify-content: space-between;
         .footer__list{
             display: grid;
             padding: 30px 10px 0px 0px;

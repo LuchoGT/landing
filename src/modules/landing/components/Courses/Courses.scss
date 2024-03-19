@@ -1,14 +1,13 @@
 .course{
-    background-color: red;
     display: grid;
-    gap: 1rem;
+    gap: 3rem;
     grid-template-columns: repeat(3,1fr);
+    margin-top: 2rem;
     &__container{
         display: flex;
-        width: 340px;
         height: 150px;
         background: green;
-        border-radius: .5rem;
+        border-radius: 1rem;
         background: linear-gradient(180deg, #0E4B18 0%, #222949 100%);
         justify-content: space-around;
         align-items: center;

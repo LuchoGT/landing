@@ -22,61 +22,65 @@ export const HomePage = () => {
           <p className="welcome__courses">Ver cursos</p>
         </div>
       </div>
-      <Carousel/>
-      <section className="choise">
-        <h2>¿Porqué debes elegirnos?</h2>
-        <ul className="choise__data">
-          <li>
-            🌍
-          </li>
-          <li><span className="span">Resultados comprobados</span></li>
-          <li>Con un enfoque práctico, garantizamos que cada curso te acerque más a tus metas profesionales y personales.</li>
-        </ul>
-        <ul className="choise__data">
-          <li>
-            🌍
-          </li>
-          <li><span className="span">Potencia tu aprendizaje</span></li>
-          <li>Nuestros cursos están diseñados para ofrecerte conocimientos sólidos y aplicables en el mundo real.</li>
-        </ul>
-        <ul className="choise__data">
-          <li>
-            🌍
-          </li>
-          <li><span className="span">Flexibilidad total</span></li>
-          <li>Aprende a tu propio ritmo con acceso 24/7 a nuestros recursos educativos desde cualquier lugar.</li>
-        </ul>
-        <ul className="choise__data">
-          <li>
-            🌍
-          </li>
-          <li><span className="span">Instructores expertos</span></li>
-          <li>Nuestro equipo de profesionales altamente calificados están comprometidos con tu éxito.</li>
-        </ul>
-      </section>
-      <section className="banner">
-        <div className="banner__container">
-          <div className="banner__item">
-            <ul>
-              <li><span>¿Quién será tu profesor?</span></li>
-              <li>*Expertos en el Campo</li>
-              <li>*Trayectoria comprobada</li>
-              <li>*Comprometidos con tu éxito</li>
-            </ul>
-          </div>
-          <div className="banner__item">
-            <ul>
-              <li><span>Importancia del certificado</span></li>
-              <li>*Validación de Habilidades</li>
-              <li>*Reconocimiento Profesional</li>
-              <li>*Diferenciación en el Mercado Laboral</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <LandingCourses/>
-      <LandingQuestions/>
-      <LandingOpinions/>
+      <div className="container">
+          <Carousel/>
+          <section className="choise">
+            <h2>¿Porqué debes elegirnos?</h2>
+            <div className="choise__data">
+              <ul className="choise__item">
+                <li>
+                  🌍
+                </li>
+                <li><span className="span">Resultados comprobados</span></li>
+                <li>Con un enfoque práctico, garantizamos que cada curso te acerque más a tus metas profesionales y personales.</li>
+              </ul>
+              <ul className="choise__item">
+                <li>
+                  🌍
+                </li>
+                <li><span className="span">Potencia tu aprendizaje</span></li>
+                <li>Nuestros cursos están diseñados para ofrecerte conocimientos sólidos y aplicables en el mundo real.</li>
+              </ul>
+              <ul className="choise__item">
+                <li>
+                  🌍
+                </li>
+                <li><span className="span">Flexibilidad total</span></li>
+                <li>Aprende a tu propio ritmo con acceso 24/7 a nuestros recursos educativos desde cualquier lugar.</li>
+              </ul>
+              <ul className="choise__item">
+                <li>
+                  🌍
+                </li>
+                <li><span className="span">Instructores expertos</span></li>
+                <li>Nuestro equipo de profesionales altamente calificados están comprometidos con tu éxito.</li>
+              </ul>
+            </div>
+          </section>
+          <section className="banner">
+            <div className="banner__container">
+              <div className="banner__item">
+                <ul>
+                  <li><span>¿Quién será tu profesor?</span></li>
+                  <li>*Expertos en el Campo</li>
+                  <li>*Trayectoria comprobada</li>
+                  <li>*Comprometidos con tu éxito</li>
+                </ul>
+              </div>
+              <div className="banner__item">
+                <ul>
+                  <li><span>Importancia del certificado</span></li>
+                  <li>*Validación de Habilidades</li>
+                  <li>*Reconocimiento Profesional</li>
+                  <li>*Diferenciación en el Mercado Laboral</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <LandingCourses/>
+          <LandingQuestions/>
+          <LandingOpinions/>
+      </div>
     </main>
   );
 };
