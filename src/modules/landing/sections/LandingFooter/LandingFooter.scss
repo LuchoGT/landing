@@ -1,0 +1,47 @@
+.footer {
+    background: linear-gradient(92.61deg, rgba(34, 45, 73, 0.59) 44.08%, #5059C9 98.35%);
+    color: $navbar-color;
+    &__container{
+        max-width: calc(1240px);
+        margin: 0px auto;
+        padding: 20px 20px 50px;
+    }
+    &__menu{
+        width: 100%;
+        // background-color: red;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
+        .footer__list{
+            display: grid;
+            padding: 30px 10px 0px 0px;
+            span{
+                font-size: 1.4rem;
+                font-weight: 800;
+                display: block;
+                padding-bottom: 10px;
+            }
+            li{
+                display: flex;
+            }
+            &--logo{
+                width: 50%;
+                height: 100%;
+                // background-color: green;
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            .footer__networks{
+                display: flex;
+            }
+        }
+    }
+    &__copy{
+        text-align: center;
+    }
+}
+
+
+
