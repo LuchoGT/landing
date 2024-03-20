@@ -1,0 +1,63 @@
+.welcome {
+    width: 100%;
+    min-width: 320px;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("/src/assets/img/home.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    &__container {
+      position: absolute;
+      top: 30%;
+      left: 6%;
+      width: 30rem;
+      color: white;
+      text-align: start;
+      max-width: 1240px;
+      padding: 0 20px;
+      margin: 0 auto;
+      @include mobile{
+        top: 30%;
+        color: white;
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        // background: red;
+        // border: 1px solid green;
+      }
+      .welcome__title {
+        font-size: 1rem;
+      }
+      .welcome__subtitle {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+      .welcome__text {
+        font-size: 0.8rem;
+        margin-top: 2rem;
+      }
+
+      .welcome__courses {
+        border: 1px solid $button-color-2;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        width: 15rem;
+        text-align: center;
+        color: $button-color-2;
+        &:hover{
+            color: red;
+            background-color: green;
+            cursor: pointer;
+        }
+        @include mobile{
+            margin: 2rem auto;
+        }
+      }
+    }
+  }

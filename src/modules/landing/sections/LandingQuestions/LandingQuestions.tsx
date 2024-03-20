@@ -6,6 +6,8 @@ export const LandingQuestions = () => {
 
     const toggleComponente = () => {
         setQuestion(!question);
+        console.log('aaa');
+        
       };
   return (
     <section className="questions">

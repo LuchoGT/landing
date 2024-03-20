@@ -1,5 +1,5 @@
 .questions{
-    background-color: red;
+    // background-color: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -8,7 +8,7 @@
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    z-index: 1;
+    // z-index: 1;
     h2{
         font-weight: 900;
     width: 100%;
@@ -21,16 +21,21 @@
     align-items: center;
     width: 100%;
     ul{
-        gap: 1rem;
+        // gap: 1rem;
         line-height: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 15px 5px 0;
-        text-align: center;
+        // text-align: center;
+        width: 100%;
         li{
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(20, 20, 21, 0.2);
+            @include mobile{
+                padding: 1rem 0;
+            }
         }
     }
     }
@@ -39,7 +44,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        z-index: -1;
+        // z-index: -1;
         background: rgba(79, 88, 198, 0.1);
         width: 100vw;
         vertical-align: middle;

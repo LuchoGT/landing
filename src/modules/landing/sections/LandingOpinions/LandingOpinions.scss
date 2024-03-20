@@ -1,17 +1,44 @@
 .opinions{
-    padding: 2rem 0;
+    // background-color: red;
+    padding: 40px 0;
+    h2{
+        font-weight: 900;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        gap: 3rem;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+        }
+    }
     &__card{
         background: rgba(79, 88, 198, 0.25);
         border-radius: 0.5rem;
         padding: 1rem;
-        width: 400px;
+        // width: 400px;
         .opinions__header{
             display: flex;
+            align-items: center;
+            gap: 1rem;
             img{
                 width: 3rem;
                 height: 3rem;
                 border-radius: 50%;
                 object-fit: cover;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+            span{
+                font-size: 1.2rem;
+                font-weight: 700;
             }
         }
         .opinions__text{

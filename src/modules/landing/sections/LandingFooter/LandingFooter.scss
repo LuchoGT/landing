@@ -4,11 +4,14 @@
     &__container{
         max-width: calc(1240px);
         margin: 0 auto;
-        padding: 20px 20px 50px;
+        padding: 20px;
     }
     &__menu{
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+        }
         width: 100%;
-        // background-color: red;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -29,7 +32,6 @@
             &--logo{
                 width: 50%;
                 height: 100%;
-                // background-color: green;
                 font-size: 4rem;
                 font-weight: 700;
             }
@@ -40,6 +42,7 @@
     }
     &__copy{
         text-align: center;
+        margin-top: 2rem;
     }
 }
 
