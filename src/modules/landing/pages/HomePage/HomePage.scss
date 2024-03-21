@@ -13,7 +13,7 @@
     max-width: calc(1200px + 40px);
     padding: 0 20px;
     margin: 0 auto;
-  
+    // background-color: red;
   }
   
 
@@ -25,14 +25,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    // text-align: center;
     overflow: hidden;
     transform: scaleX(-1);
     position: relative;
-    // &::after{
+    @include mobile{
+      height: 600px;
+    }
+    // background-color: red;
+    // &::before{
     //   position: absolute;
     //   width: 100vw;
-    //   background-color: red;
+    //   background-color: green;
     //   z-index: -1;
     //   content: "";
     //   top: 0;
@@ -46,7 +50,11 @@
         display: flex;
         gap: 2rem;
         flex-direction: column;
-        width: 27rem;
+        @include mobile{
+          top: 15%;
+          left: 0%;
+          padding: 1rem;
+        }
     }
     &__item{
         border-radius: 1.5rem;
@@ -54,6 +62,9 @@
         background: linear-gradient(180deg, #4F58C6 0%, #222949 100%);
         padding: 32px 36px;
         color: white;
+        @include mobile{
+          padding: 1rem;
+        }
         ul{
             display: flex;
             flex-direction: column;

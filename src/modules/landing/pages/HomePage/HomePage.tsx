@@ -11,13 +11,9 @@ export const HomePage = () => {
   return (
     <main className="main">
       <LandingWelcome/>
-      {/* <div className="container">
+      <div className="container">
           <LandingCarousel/>
           <LandingChoise/>
-          <LandingCourses/>
-          <LandingQuestions/>
-          <LandingOpinions/>
-      </div>
           <section className="banner">
             <div className="banner__container">
               <div className="banner__item">
@@ -37,7 +33,11 @@ export const HomePage = () => {
                 </ul>
               </div>
             </div>
-          </section> */}
+          </section>
+          <LandingCourses/>
+          <LandingQuestions/>
+          <LandingOpinions/>
+      </div>
     </main>
   );
 };

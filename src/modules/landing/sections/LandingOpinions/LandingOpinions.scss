@@ -1,5 +1,4 @@
 .opinions{
-    // background-color: red;
     padding: 40px 0;
     h2{
         font-weight: 900;
@@ -8,13 +7,13 @@
         font-size: 2rem;
     }
     &__container{
-        display: flex;
-        justify-content: space-between;
-        // align-items: center;
-        gap: 3rem;
-        @include mobile{
-            display: flex;
-            flex-direction: column;
+        display: grid;
+        gap: 2rem;
+        @include tablet2{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include desktop2{
+            grid-template-columns: repeat(3, 1fr);
         }
     }
     &__card{
@@ -43,6 +42,7 @@
         }
         .opinions__text{
             text-align: justify;
+            margin-top: 1rem;
         }
     }
 }

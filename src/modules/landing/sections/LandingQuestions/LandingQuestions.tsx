@@ -9,6 +9,8 @@ export const LandingQuestions = () => {
         console.log('aaa');
         
       };
+
+      
   return (
     <section className="questions">
       <h2>Preguntas frecuentes</h2>
@@ -23,7 +25,7 @@ export const LandingQuestions = () => {
           </li>
           {
               question &&
-              <div>
+              <div className="questions__reply">
                   <h1>Componente abierto</h1>
                   <p>Aquí va el contenido del componente.</p>
               </div>

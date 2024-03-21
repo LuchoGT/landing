@@ -1,32 +1,44 @@
 .course{
     display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    // grid-template-columns: repeat(3,1fr);
     margin-top: 2rem;
-    @include mobile{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+    // @include mobile{
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 2rem;
+    // }
+    @include tablet3{
+        background: green;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include desktop3{
+        grid-template-columns: repeat(3,1fr);
     }
     &__container{
-        display: flex;
-        height: 150px;
-        background: green;
         border-radius: 1rem;
         background: linear-gradient(180deg, #0E4B18 0%, #222949 100%);
-        justify-content: space-around;
+        gap: 1rem;
+        line-height: 1;
+        display: flex;
         align-items: center;
         padding: 1rem;
-        p{
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-            font-weight: 800;
-            color: white;
+        text-align: center;
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
+        justify-content: space-around;
+        @include tablet3{
+            padding: 1rem 0;
         }
-
-        img{
-            height: 9rem;
-            object-fit: cover;
+            p{
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                font-weight: 800;
+                color: white;
+            }
+    
+            img{
+                height: 9rem;
+                object-fit: cover;
+            }
         }
     }
-}
