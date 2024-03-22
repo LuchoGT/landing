@@ -1,4 +1,3 @@
-import { Carousel } from "../../components/Carousel/Carousel";
 import { LandingCarousel } from "../../sections/LandingCarousel/LandingCarousel";
 import { LandingChoise } from "../../sections/LandingChoise/LandingChoise";
 import { LandingCourses } from "../../sections/LandingCourses/LandingCourses";
