@@ -1,4 +1,8 @@
+import { LandingChoise1 } from '@/assets/img/LandingChoise/LandingChoise1';
 import './LandingChoise.scss'
+import { LandingChoise2 } from '@/assets/img/LandingChoise/LandingChoise2';
+import { LandingChoise3 } from '@/assets/img/LandingChoise/LandingChoise3';
+import { LandingChoise4 } from '@/assets/img/LandingChoise/LandingChoise4';
 
 export const LandingChoise = () => {
   return (
@@ -6,7 +10,7 @@ export const LandingChoise = () => {
       <h2>¿Porqué debes elegirnos?</h2>
       <div className="choise__data">
         <ul className="choise__item">
-          <li>🌍</li>
+          <li><LandingChoise1/></li>
           <li>
             <span className="span">Resultados comprobados</span>
           </li>
@@ -16,7 +20,7 @@ export const LandingChoise = () => {
           </li>
         </ul>
         <ul className="choise__item">
-          <li>🌍</li>
+          <li><LandingChoise2/></li>
           <li>
             <span className="span">Potencia tu aprendizaje</span>
           </li>
@@ -26,7 +30,7 @@ export const LandingChoise = () => {
           </li>
         </ul>
         <ul className="choise__item">
-          <li>🌍</li>
+          <li><LandingChoise3/></li>
           <li>
             <span className="span">Flexibilidad total</span>
           </li>
@@ -36,7 +40,7 @@ export const LandingChoise = () => {
           </li>
         </ul>
         <ul className="choise__item">
-          <li>🌍</li>
+          <li><LandingChoise4/></li>
           <li>
             <span className="span">Instructores expertos</span>
           </li>

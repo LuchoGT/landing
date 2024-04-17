@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './LandingQuestions.scss'
+import { LandingArrow } from "@/assets/icon/LandingOthers/LandingArrow";
 export const LandingQuestions = () => {
 
     const [question, setQuestion] = useState(false);
@@ -21,7 +22,7 @@ export const LandingQuestions = () => {
               ¿Cuánto tiempo tengo acceso al material del curso después de la
               inscripción?
             </p>
-            <p>👇</p>
+            <LandingArrow/>
           </li>
           {
               question &&
@@ -32,15 +33,15 @@ export const LandingQuestions = () => {
           }
           <li>
             <p>¿Cómo se evalúa mi progreso en el curso?</p>
-            <p>👇</p>
+            <LandingArrow/>
           </li>
           <li>
             <p>¿Hay pruebas o exámenes al final de cada curso?</p>
-            <p>👇</p>
+            <LandingArrow/>
           </li>
           <li>
             <p>¿Ofrecen opciones de pago flexibles?</p>
-            <p>👇</p>
+            <LandingArrow/>
           </li>
         </ul>
       </div>

@@ -41,9 +41,13 @@
                     color: $text-color;
                     &--room{
                         border: 1px solid $button-color;
-                        padding: .5rem;
+                        padding: .5rem 1rem;
                         border-radius: .5rem;
                         color: $button-color;
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: center;
+                        gap: .5rem;
                     }
                     &:hover{
                         cursor: pointer;

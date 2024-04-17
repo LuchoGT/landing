@@ -28,6 +28,7 @@
             }
             li{
                 display: flex;
+                gap: .5rem
             }
             &--logo{
                 width: 50%;
@@ -37,6 +38,13 @@
             }
             .footer__networks{
                 display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+            .footer__contact{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
             }
         }
     }

@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import './LandingHeader.scss'
+import { LandingLogo } from '@/assets/img/LandingLogo/LandingLogo'
+import { LandingUser } from '@/assets/img/LandingUser/LandingUser'
+import { LandinMenu } from '@/assets/icon/LandingOthers/LandinMenu'
+import { LandingExit } from '@/assets/icon/LandingOthers/LandingExit'
 
 export const LandingHeader = () => {
 
@@ -13,17 +17,19 @@ export const LandingHeader = () => {
     <header className='header'>
       <nav className='navbar'>
         <div className='navbar__logo'>
-          <h1>Synnexa</h1>
+          <LandingLogo/>
         </div>
         <div className='navbar__icon' onClick={handleOpenMenu}>
-          👇
+          <LandinMenu/>
         </div>
         {
           isOpenMenu &&
           <div className='menu'>
             <div className='menu__title'>
-                <h1>Synnexa</h1>
-                <p onClick={handleOpenMenu}>👎</p>
+              <LandingLogo/>
+                <p onClick={handleOpenMenu}>
+                  <LandingExit/>
+                </p>
               </div>
               <nav className='menu__nav'>
                 <ul className='menu__list'>
@@ -41,7 +47,8 @@ export const LandingHeader = () => {
             <li className='navbar__item'>Testimonios</li>
             <li className='navbar__item'>Blog</li>
             <li className='navbar__item navbar__item--room'>
-                Aula Virtual
+              <LandingUser/>
+              Aula virtual
             </li>
           </ul>
         </div>
