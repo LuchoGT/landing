@@ -2,32 +2,34 @@ import model from "@assets/img/model.png";
 import './Courses.scss'
 
 export const Courses = () => {
+
+  const courses = [
+    {
+      title: "Testing QA Manual"
+    },
+    {
+      title: "Testing QA Manual"
+    },
+    {
+      title: "Testing QA Manual"
+    },
+    {
+      title: "Testing QA Manual"
+    },
+    {
+      title: "Testing QA Manual"
+    },
+  ]
   return (
     <div className="course">
-      <div className="course__container">
-        <p>Testing QA Manual</p>
-        <img src={model} alt="model" />
-      </div>
-      <div className="course__container">
-        <p>Testing QA Manual</p>
-        <img src={model} alt="model" />
-      </div>
-      <div className="course__container">
-        <p>Testing QA Manual</p>
-        <img src={model} alt="model" />
-      </div>
-      <div className="course__container">
-        <p>Testing QA Manual</p>
-        <img src={model} alt="model" />
-      </div>
-      <div className="course__container">
-        <p>Testing QA Manual</p>
-        <img src={model} alt="model" />
-      </div>
-      <div className="course__container">
-        <p>Testing QA Manual</p>
-        <img src={model} alt="model" />
-      </div>
+      {
+        courses.map((course,index) => (
+          <div className="course__container" key={index}>
+            <p>{course.title}</p>
+            <img src={model} alt="model" />
+          </div>
+        ))
+      }
     </div>
   );
 };
